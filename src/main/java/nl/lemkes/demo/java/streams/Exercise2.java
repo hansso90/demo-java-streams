@@ -13,8 +13,6 @@ public class Exercise2 {
    * @return The total amount of all cars;
    */
   public static Integer getTotalAmountOfAllCarsOfHarbor(final Harbor harbor) {
-    return harbor.parkingAreas().stream()
-        .map(parkingArea -> parkingArea.cars().size())
-        .reduce(0, Integer::sum);
+    return 0;
   }
 }
