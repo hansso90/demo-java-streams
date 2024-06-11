@@ -17,7 +17,7 @@ public record Harbor(List<ParkingArea> parkingAreas) {
   }
 
   public void park(final List<Car> cars) {
-    cars.stream().forEach(this::park);
+    cars.forEach(this::park);
   }
 
   public void park(final Car car) {
@@ -25,6 +25,12 @@ public record Harbor(List<ParkingArea> parkingAreas) {
     park(i, car);
   }
 
+  /**
+   * Recursion if parking area is full...
+   *
+   * @param parkingArea
+   * @param car
+   */
   public void park(final int parkingArea, final Car car) {
     if (!parkingAreas.get(parkingArea).park(car)) {
       park(parkingArea + 1, car);

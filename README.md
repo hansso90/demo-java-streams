@@ -44,3 +44,6 @@ For this harbor there are some parking area's with different amount of spots.
 _This picture is fictional_
 
 To you start the exercises to report all kind of statistics.
+
+# Resources:
+- https://stackify.com/streams-guide-java-8/
